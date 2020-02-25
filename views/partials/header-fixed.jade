@@ -1,0 +1,83 @@
+.wrap_header.fixed-header2.trans-0-4
+  // Logo
+  a.logo(href='index.html')
+    img(src='images/icons/logo.png', alt='IMG-LOGO')
+  // Menu
+  .wrap_menu
+    nav.menu
+      ul.main_menu
+        li
+          a(href='index.html') Home
+          ul.sub_menu
+            li
+              a(href='index.html') Homepage V1
+            li
+              a(href='home-02.html') Homepage V2
+            li
+              a(href='home-03.html') Homepage V3
+        li
+          a(href='product.html') Shop
+        li.sale-noti
+          a(href='product.html') Sale
+        li
+          a(href='cart.html') Features
+        li
+          a(href='blog.html') Blog
+        li
+          a(href='about.html') About
+        li
+          a(href='contact.html') Contact
+  // Header Icon
+  .header-icons
+    a.header-wrapicon1.dis-block(href='#')
+      img.header-icon1(src='images/icons/icon-header-01.png', alt='ICON')
+    span.linedivide1
+
+
+
+    //- Header Cart
+    .header-wrapicon2
+      include ../partials/header-cart
+
+
+    //- .header-wrapicon2
+      img.header-icon1.js-show-header-dropdown(src='images/icons/icon-header-02.png', alt='ICON')
+      span.header-icons-noti 0
+      // Header cart noti
+      .header-cart.header-dropdown
+        ul.header-cart-wrapitem
+          li.header-cart-item
+            .header-cart-item-img
+              img(src='images/item-cart-01.jpg', alt='IMG')
+            .header-cart-item-txt
+              a.header-cart-item-name(href='#')
+                | White Shirt With Pleat Detail Back
+              span.header-cart-item-info
+                | 1 x $19.00
+          li.header-cart-item
+            .header-cart-item-img
+              img(src='images/item-cart-02.jpg', alt='IMG')
+            .header-cart-item-txt
+              a.header-cart-item-name(href='#')
+                | Converse All Star Hi Black Canvas
+              span.header-cart-item-info
+                | 1 x $39.00
+          li.header-cart-item
+            .header-cart-item-img
+              img(src='images/item-cart-03.jpg', alt='IMG')
+            .header-cart-item-txt
+              a.header-cart-item-name(href='#')
+                | Nixon Porter Leather Watch In Tan
+              span.header-cart-item-info
+                | 1 x $17.00
+        .header-cart-total
+          | Total: $75.00
+        .header-cart-buttons
+          .header-cart-wrapbtn
+            // Button
+            a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='cart.html')
+              | View Cart
+          .header-cart-wrapbtn
+            // Button
+            a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='#')
+              | Check Out

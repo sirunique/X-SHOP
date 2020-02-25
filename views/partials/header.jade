@@ -1,0 +1,189 @@
+header.header2
+  // Header desktop
+  .container-menu-header-v2.p-t-26
+    .topbar2
+      .topbar-social
+        a.topbar-social-item.fa.fa-facebook(href='#')
+        a.topbar-social-item.fa.fa-instagram(href='#')
+        a.topbar-social-item.fa.fa-pinterest-p(href='#')
+        a.topbar-social-item.fa.fa-snapchat-ghost(href='#')
+        a.topbar-social-item.fa.fa-youtube-play(href='#')
+      // Logo2
+      a.logo2(href='index.html')
+        img(src='images/icons/logo.png', alt='IMG-LOGO')
+      .topbar-child2
+        span.topbar-email
+          | fashe@example.com
+        .topbar-language.rs1-select2
+          select.selection-1(name='time')
+            option USD
+            option EUR
+        // 
+
+        if !isAuthenticated
+          a.header-wrapicon1.dis-block.m-l-30(href='/account/signin') Login
+            img.header-icon1(src='images/icons/icon-header-01.png', alt='ICON')
+
+          a.header-wrapicon1.dis-block.m-l-30(href='/account/signup') Register
+            img.header-icon1(src='images/icons/icon-header-01.png', alt='ICON')
+        else
+          a.header-wrapicon1.dis-block.m-l-30(href='/account/signout') Logout
+            img.header-icon1(src='images/icons/icon-header-01.png', alt='ICON')
+
+
+        span.linedivide1
+        //- Header Cart
+        .header-wrapicon2.m-r-13
+         include ../partials/header-cart
+
+
+        //- .header-wrapicon2.m-r-13
+          img.header-icon1.js-show-header-dropdown(src='images/icons/icon-header-02.png', alt='ICON')
+          span.header-icons-noti 0
+          // Header cart noti
+          .header-cart.header-dropdown
+            ul.header-cart-wrapitem
+              li.header-cart-item
+                .header-cart-item-img
+                  img(src='images/item-cart-01.jpg', alt='IMG')
+                .header-cart-item-txt
+                  a.header-cart-item-name(href='#')
+                    | White Shirt With Pleat Detail Back
+                  span.header-cart-item-info
+                    | 1 x $19.00
+              li.header-cart-item
+                .header-cart-item-img
+                  img(src='images/item-cart-02.jpg', alt='IMG')
+                .header-cart-item-txt
+                  a.header-cart-item-name(href='#')
+                    | Converse All Star Hi Black Canvas
+                  span.header-cart-item-info
+                    | 1 x $39.00
+              li.header-cart-item
+                .header-cart-item-img
+                  img(src='images/item-cart-03.jpg', alt='IMG')
+                .header-cart-item-txt
+                  a.header-cart-item-name(href='#')
+                    | Nixon Porter Leather Watch In Tan
+                  span.header-cart-item-info
+                    | 1 x $17.00
+            .header-cart-total
+              | Total: $75.00
+            .header-cart-buttons
+              .header-cart-wrapbtn
+                // Button
+                a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='cart.html')
+                  | View Cart
+              .header-cart-wrapbtn
+                // Button
+                a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='#')
+                  | Check Out
+    .wrap_header
+      // Menu
+      .wrap_menu
+        nav.menu
+          ul.main_menu
+            li
+              a(href='/') Home
+            li
+              a(href='/products') Shop
+            li.sale-noti
+              a(href='/products') Sale
+            li
+              a(href='cart.html') Features
+            li
+              a(href='#') About
+            li
+              a(href='#') Contact
+      // Header Icon
+      .header-icons
+
+
+  // Header Mobile
+  .wrap_header_mobile
+    // Logo moblie
+    a.logo-mobile(href='index.html')
+      img(src='images/icons/logo.png', alt='IMG-LOGO')
+    // Button show menu
+    .btn-show-menu
+      // Header Icon mobile
+      .header-icons-mobile
+        a.header-wrapicon1.dis-block(href='#')
+          img.header-icon1(src='images/icons/icon-header-01.png', alt='ICON')
+        span.linedivide2
+        .header-wrapicon2
+          img.header-icon1.js-show-header-dropdown(src='images/icons/icon-header-02.png', alt='ICON')
+          span.header-icons-noti 0
+          // Header cart noti
+          .header-cart.header-dropdown
+            ul.header-cart-wrapitem
+              li.header-cart-item
+                .header-cart-item-img
+                  img(src='images/item-cart-01.jpg', alt='IMG')
+                .header-cart-item-txt
+                  a.header-cart-item-name(href='#')
+                    | White Shirt With Pleat Detail Back
+                  span.header-cart-item-info
+                    | 1 x $19.00
+              li.header-cart-item
+                .header-cart-item-img
+                  img(src='images/item-cart-02.jpg', alt='IMG')
+                .header-cart-item-txt
+                  a.header-cart-item-name(href='#')
+                    | Converse All Star Hi Black Canvas
+                  span.header-cart-item-info
+                    | 1 x $39.00
+              li.header-cart-item
+                .header-cart-item-img
+                  img(src='images/item-cart-03.jpg', alt='IMG')
+                .header-cart-item-txt
+                  a.header-cart-item-name(href='#')
+                    | Nixon Porter Leather Watch In Tan
+                  span.header-cart-item-info
+                    | 1 x $17.00
+            .header-cart-total
+              | Total: $75.00
+            .header-cart-buttons
+              .header-cart-wrapbtn
+                // Button
+                a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='cart.html')
+                  | View Cart
+              .header-cart-wrapbtn
+                // Button
+                a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='#')
+                  | Check Out
+      .btn-show-menu-mobile.hamburger.hamburger--squeeze
+        span.hamburger-box
+          span.hamburger-inner
+  // Menu Mobile
+  .wrap-side-menu
+    nav.side-menu
+      ul.main-menu
+        li.item-topbar-mobile.p-l-20.p-t-8.p-b-8
+          span.topbar-child1
+            | Free shipping for standard order over $100
+        li.item-topbar-mobile.p-l-20.p-t-8.p-b-8
+          .topbar-child2-mobile
+            span.topbar-email
+              | fashe@example.com
+            .topbar-language.rs1-select2
+              select.selection-1(name='time')
+                option USD
+                option EUR
+        li.item-topbar-mobile.p-l-10
+          .topbar-social-mobile
+            a.topbar-social-item.fa.fa-facebook(href='#')
+            a.topbar-social-item.fa.fa-instagram(href='#')
+            a.topbar-social-item.fa.fa-pinterest-p(href='#')
+            a.topbar-social-item.fa.fa-snapchat-ghost(href='#')
+            a.topbar-social-item.fa.fa-youtube-play(href='#')
+        li.item-menu-mobile
+          a(href='/') Home
+        li.item-menu-mobile
+          a(href='/products') Shop
+        li.item-menu-mobile
+          a(href='/products') Sale
+        li.item-menu-mobile
+          a(href='#') About
+        li.item-menu-mobile
+          a(href='#') Contact

@@ -1,0 +1,48 @@
+img.header-icon1.js-show-header-dropdown(src='images/icons/icon-header-02.png', alt='ICON') 
+span.header-icons-noti 
+    //- if session.cart 
+    //-    | #{session.cart.totalQty}
+    //- else 
+    //-     | 0 
+    if appCart
+        | #{appCart.totalQty}
+    else
+        | 0
+// Header cart noti
+.header-cart.header-dropdown
+    ul.header-cart-wrapitem
+        li.header-cart-item
+            .header-cart-item-img
+                img(src='images/item-cart-01.jpg', alt='IMG')
+            .header-cart-item-txt
+                a.header-cart-item-name(href='#')
+                    | White Shirt With Pleat Detail Back
+                span.header-cart-item-info
+                    | 1 x $19.00
+        li.header-cart-item
+            .header-cart-item-img
+                img(src='images/item-cart-02.jpg', alt='IMG')
+            .header-cart-item-txt
+                a.header-cart-item-name(href='#')
+                    | Converse All Star Hi Black Canvas
+                span.header-cart-item-info
+                    | 1 x $39.00
+        li.header-cart-item
+            .header-cart-item-img
+                img(src='images/item-cart-03.jpg', alt='IMG')
+            .header-cart-item-txt
+                a.header-cart-item-name(href='#')
+                    | Nixon Porter Leather Watch In Tan
+                span.header-cart-item-info
+                    | 1 x $17.00
+    .header-cart-total
+        | Total: $75.00
+    .header-cart-buttons
+        .header-cart-wrapbtn
+        // Button
+        a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='/cart')
+            | View Cart
+        .header-cart-wrapbtn
+        // Button
+        a.flex-c-m.size1.bg1.bo-rad-20.hov1.s-text1.trans-0-4(href='/checkout')
+            | Check Out

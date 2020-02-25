@@ -1,0 +1,19 @@
+h1 Profile Page
+    h3 My Orders
+        if orders && orders.length > 0
+            each order in orders
+                table
+                    thead
+                        tr
+                            th Orders
+                    tbody
+                        each items in order.cart
+                            tr
+                                td Items
+                                td #{items.qty}
+                                td $ #{items.price}
+                        tr
+                            th total Price
+                            th $ #{order.cart.totalPrice}
+        else
+            h3 No Order Place

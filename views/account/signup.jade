@@ -1,0 +1,16 @@
+h1 Signup Page
+if errorMessage
+    span #{errorMessage}
+form(action="/account/signup", method="post")
+    input(type="hidden", name="_csrf", value=(csrfToken))
+    label(for="") Email
+    br
+    input(type="text", name="email" placeholder="Enter Email")
+    br
+    label(for="") Password
+    br
+    input(type="password", name="password" placeholder="Enter password")
+    br
+    button(type="submit") Sign Up
+p Already have an account ? 
+    a(href="/account/signin") Sign in here
